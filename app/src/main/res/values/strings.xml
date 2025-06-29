@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Loss Reduction System Android</string>
+    <string name="app_name_full">Loss Reduction System</string>
+    <string name="app_tagline">Intelligent monitoring and optimization</string>
+    <string name="mosekate_logo_desc">Mosekate company logo</string>
+    <string name="company_name">Mosekate</string>
+    <string name="version_info">Version 1.0.0</string>
+
+    <!-- Version strings -->
+    <string name="version_format">Version %s</string>
+    <string name="version_unknown">Version Unknown</string>
+
+    <!-- Additional strings for splash -->
+    <string name="splash_loading">Loading...</string>
+    <string name="splash_welcome">Welcome</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

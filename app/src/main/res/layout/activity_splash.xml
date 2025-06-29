@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashRootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fitsSystemWindows="true"
+    tools:context=".SplashActivity">
+
+    <!-- Branding/company info -->
+    <TextView
+        android:id="@+id/textViewBranding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:alpha="0.7"
+        android:letterSpacing="0.1"
+        android:text="@string/company_name"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="MOSEKATE" />
+
+    <!-- Main content container for better organization -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Logo with modern styling -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="@string/mosekate_logo_desc"
+            android:elevation="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/mosekate_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textViewAppName"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <!-- App name with improved typography -->
+        <TextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:letterSpacing="0.02"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/app_name_full"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+            app:layout_constraintBottom_toTopOf="@id/textViewTagline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Loss Reduction System" />
+
+        <!-- Tagline for better context -->
+        <TextView
+            android:id="@+id/textViewTagline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:alpha="0.8"
+            android:gravity="center"
+            android:text="@string/app_tagline"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/textViewAppName"
+            app:layout_constraintBottom_toTopOf="@id/progressIndicator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Intelligent monitoring and optimization" />
+
+        <!-- Progress indicator -->
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:indicatorSize="48dp"
+            app:indicatorColor="@color/dodger_blue"
+            app:layout_constraintTop_toBottomOf="@id/textViewTagline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Version info at bottom -->
+    <TextView
+        android:id="@+id/textViewVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:alpha="0.6"
+        android:text="@string/version_info"
+        android:textColor="@color/dodger_blue"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Version 1.0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+# ---- Android Studio & IntelliJ ----
+*.iml
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/caches/
+.idea/libraries/
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Gradle & build output
+.gradle/
+build/
+**/build/
+*/captures/
+*/outputs/
+.externalNativeBuild/
+.cxx/
+
+# Local config
+local.properties
+/local.properties
+
+# Log and crash dumps
+*.log
+*.hprof
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kotlin build cache
+.kotlinc
+
+# NDK / CMake intermediate
+**/.cxx/
+
+# Signing/secret keys (if you ever move them here)
+*.key
+*.pem
+
+# VSCode (if teammates use it)
+.vscode/
+
+# Mac metadata
+._*
+
+# ---- End Android template ----
