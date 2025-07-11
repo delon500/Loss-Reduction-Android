@@ -109,7 +109,7 @@ public class AssetFragment extends Fragment
 
         // 4) FAB → AddAssetActivity
         fabAddAsset.setOnClickListener(v -> {
-            Intent intent = new Intent(getActivity(), AssetDetailsActivity.class);
+            Intent intent = new Intent(getActivity(), AddAssetActivity.class);
             intent.putExtra("client_id",clientId);
             intent.putExtra("project_id",projectId);
             startActivity(intent);

@@ -20,11 +20,11 @@
             android:id="@+id/tvLoginTitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="88dp"
             android:text="Login"
             android:textAlignment="center"
             android:textColor="#1F2937"
-            android:textSize="28sp"
+            android:textSize="38sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="62dp"
             android:hint="Username"
             app:cursorColor="@color/black"
             android:textColorHint="@color/black"
@@ -55,7 +55,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etUsername"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="58dp"
                 android:inputType="text"
                 android:padding="12dp"
                 android:textColor="@color/black"
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="52dp"
             android:hint="Password"
             android:textColorHint="@color/black"
             app:hintTextColor="@color/black"
@@ -89,7 +89,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="58dp"
                 android:inputType="textPassword"
                 android:padding="12dp"
                 android:textColor="@color/black"
@@ -97,24 +97,26 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Login Button -->
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="70dp"
             android:layout_marginEnd="32dp"
-            android:layout_marginTop="24dp"
             android:paddingVertical="12dp"
             android:text="Login"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             app:backgroundTint="@color/dodger_blue"
             app:cornerRadius="8dp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tilPassword" />
-        
+
         <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/loginProgress"
             android:layout_width="48dp"
@@ -132,12 +134,13 @@
             android:id="@+id/tvForgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Forgot password?"
+            android:layout_marginTop="36dp"
+            android:text="Forgot password ?"
             android:textColor="@color/dodger_blue"
             android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="@id/btnLogin"
             app:layout_constraintEnd_toEndOf="@id/btnLogin"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@id/btnLogin"
             app:layout_constraintTop_toBottomOf="@id/btnLogin" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
